@@ -3,7 +3,7 @@
   become: true
   vars:
    repopath: https://github.com/Sonal0409/AnsibleDockerdemo.git
-   dest_path: /tmp/projectcode
+   dest_path: /tmp/projectcode1
   tasks:
   - name: Clone the repo which has the code on the worker node
     git: repo={{repopath}} dest={{dest_path}}
