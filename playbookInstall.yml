@@ -1,5 +1,5 @@
 - name: Playbook to Install Maven and Docker
-  hosts: webserver
+  hosts: localhost
   become: true
   tasks:
   - name: Update the apt-get repo
