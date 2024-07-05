@@ -1,5 +1,5 @@
 - name: Playbook for integration and Deployment
-  hosts: localhost
+  hosts: webserver
   become: true
   vars:
    repopath: https://github.com/Sonal0409/AnsibleDockerdemo.git
