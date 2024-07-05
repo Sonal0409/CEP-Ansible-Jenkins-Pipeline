@@ -1,5 +1,5 @@
 - name: Playbook for integration and Deployment
-  hosts: webserver
+  hosts: localhost
   become: true
   vars:
    repopath: https://github.com/Sonal0409/DevOpsCodeDemo.git
