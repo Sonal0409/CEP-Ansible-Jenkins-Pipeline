@@ -1,2 +1,2 @@
 [webserver]
-localhost:42006
+localhost:42006 ansibe_user=root
