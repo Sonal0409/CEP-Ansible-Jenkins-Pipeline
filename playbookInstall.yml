@@ -1,9 +1,7 @@
 - name: Playbook to Install Maven and Docker
-  hosts: localhost
+  hosts: webserver
   become: true
   tasks:
-  - name: Update the apt-get repo
-    command: sudo apt-get update
   - name: Install maven on worker node
     package: name=maven state=present
   - name: install docker on worker node
