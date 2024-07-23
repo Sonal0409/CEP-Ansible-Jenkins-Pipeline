@@ -1,2 +1,3 @@
 [webserver]
-localhost:42006 ansibe_user=root
+172.31.14.246 ansibe_user=ansiuser
+172.31.13.62 ansible_user=ansiuser
