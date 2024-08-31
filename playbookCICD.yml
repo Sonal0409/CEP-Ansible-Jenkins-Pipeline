@@ -6,7 +6,7 @@
    dest_path: /tmp/projectcode1
   tasks:
   - name: Clone the repo which has the code on the worker node
-    git: repo={{repopath}} dest={{{dest_path}}}
+    git: repo={{repopath}} dest={{dest_path}}
   - name: build the dockerfile
     command: chdir={{dest_path}} docker build -t myimageansible .
   - name: Run the image and deploy app on container
