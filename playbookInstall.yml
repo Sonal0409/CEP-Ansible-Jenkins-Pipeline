@@ -2,9 +2,10 @@
   hosts: webserver
   become: true
   tasks:
-  - name: Install maven on worker node
-    package: name=maven state=present
+  - command: apt-get update
+  - name: Install git on worker node
+    package: name=git state=present
   - name: install docker on worker node
-    package: name=docker-ce state=present
+    package: name=docker.io state=present
   - name: Start docker service
     service: name=docker state=started
